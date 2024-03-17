@@ -1,0 +1,87 @@
+{
+    "name": "catsprite",
+    "displayName": "CatSprite",
+    "description": "Cat Theme Programmer Companion Plugin 🐱, offering code guidance and compliments.",
+    "version": "0.0.2",
+    "publisher": "b2eeze",
+    "private": true,
+    "icon": "resources/cat.png",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/b2eeze/CatSprite"
+    },
+    "engines": {
+        "vscode": "^1.73.0"
+    },
+    "categories": [
+        "Programming Languages",
+        "Snippets",
+        "Other",
+        "Machine Learning",
+        "Notebooks"
+    ],
+    "galleryBanner": {
+		"color": "#041621",
+		"theme": "dark"
+	},
+    "activationEvents": [
+        "onStartupFinished",
+        "onCommand:catsprite.start"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "title": "Start Cat Sprite",
+                "command": "catsprite.start",
+                "category": "Cat Sprite"
+            },
+            {
+                "title": "Enable CodeLens",
+                "command": "catsprite.enableCodeLens",
+                "category": "Cat Sprite"
+            },
+            {
+                "title": "Disable Codelens",
+                "command": "catsprite.disableCodeLens",
+                "category": "Cat Sprite"
+            }
+        ],
+        "configuration": {
+            "properties": {
+                "catsprite.enableCodeLens": {
+                    "type": "boolean",
+                    "default": true
+                },
+                "catsprite.apiKey": {
+                    "type": "string",
+                    "default": "",
+                    "markdownDescription": "Your personal Baidu API Key. If you don't have one, generate a new one [here](https://console.bce.baidu.com/).\n\nDon't forget to [restart your extension](command:workbench.action.reloadWindow) once you finished configuring so that your extension gets loaded with the new configurations."
+                },
+                "catsprite.secretKey": {
+                    "type": "string",
+                    "default": "",
+                    "markdownDescription": "Your personal Baidu Secret Key. If you don't have one, generate a new one [here](https://console.bce.baidu.com/).\n\nDon't forget to [restart your extension](command:workbench.action.reloadWindow) once you finished configuring so that your extension gets loaded with the new configurations."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "lint": "eslint \"src/**/*.ts\"",
+        "watch": "tsc -watch -p ./"
+    },
+    "devDependencies": {
+        "@types/node": "^16.18.34",
+        "@types/vscode": "^1.73.0",
+        "@typescript-eslint/eslint-plugin": "^6.7.0",
+        "@typescript-eslint/parser": "^6.7.0",
+        "eslint": "^8.26.0",
+        "typescript": "^5.3.2"
+    },
+    "dependencies": {
+        "axios": "^1.6.7"
+    }
+}
