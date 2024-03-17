@@ -2,14 +2,14 @@
     <img src="./resources/cat.png" width=200>
 </div>
 
-<h1 align="center">Scribe AI</h1>
+<h1 align="center">Cat Sprite</h1>
 
 <h4 align="center">
-  <a href="https://github.com/ajikan/ScribeAI#-features">Features</a>
+  <a href="https://github.com/b2eeze/CatSprite#-features">Features</a>
   ·
-  <a href="https://github.com/ajikan/ScribeAI#-getting-started">Getting Started</a>
+  <a href="https://github.com/b2eeze/CatSprite#-getting-started">Getting Started</a>
   ·
-  <a href="https://github.com/ajikan/ScribeAI#%EF%B8%8F-support-and-gratitude">Support and Gratitude</a>
+  <a href="https://github.com/b2eeze/CatSprite#%EF%B8%8F-support-and-gratitude">Support and Gratitude</a>
 </h4>
 <p align="center">
     <a href="https://github.com/b2eeze/CatSprite">
@@ -31,7 +31,7 @@
 </p>
 
 <p align="center">
-Cat Theme Programmer Companion Plugin 🐱, offering code guidance and compliments.
+Cat Theme 🐱 Programmer Companion Plugin , offering time management, compliments, and smart code guidance .
 </p>
 
 <h4 align="center">
